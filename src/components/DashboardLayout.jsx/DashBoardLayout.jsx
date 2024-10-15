@@ -28,7 +28,7 @@ const DashBoardLayout = ({children}) => {
       </div >
        {/* footer  will be here*/}
       <div className=" bottom-0 z-[500] mr-3 ml-3 mt-2">
-      <Footer />
+{/*       <Footer /> */}
       </div>
       
       </div>
