@@ -45,9 +45,9 @@ const Sidebar = ({isOpen, setIsOpen}) => {
   // Get sidebar 
   const filteredItems = sidebarSections[currentUserRole]|| []; 
   return (
-    <div  className=" w-full h-full bg-[#333333] hidden lg:block xl:block">
+    <div  className=" w-full h-full bg-[#333333]  lg:block xl:block  ">
       <SidebarHeader isOpen={isOpen} setIsOpen={setIsOpen} />
-      <ul>
+      <ul className={`absolute  w-full  ${isOpen ? 'left-0' : '-left-80'} md:left-0`}>
         {filteredItems.map((item, index) => (
           <li key={index} className="flex m-[0.0625rem] ml-0 pl-4 mr-0">
             <NavLink
